@@ -314,13 +314,14 @@
 
 -(BOOL)isSearchBarTextField
 {
-    static Class UISearchBarTextFieldClass = Nil;        //UISearchBar
+//     static Class UISearchBarTextFieldClass = Nil;        //UISearchBar
 
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        UISearchBarTextFieldClass           = NSClassFromString(@"UISearchBarTextField");
-    });
-    return ([self isKindOfClass:UISearchBarTextFieldClass] || [self isKindOfClass:[UISearchBar class]]);
+//     static dispatch_once_t onceToken;
+//     dispatch_once(&onceToken, ^{
+//         UISearchBarTextFieldClass           = NSClassFromString(@"UISearchBarTextField");
+//     });
+//     return ([self isKindOfClass:UISearchBarTextFieldClass] || [self isKindOfClass:[UISearchBar class]]);
+    return NO;
 }
 
 -(BOOL)isAlertViewTextField
