@@ -321,7 +321,7 @@
 //         UISearchBarTextFieldClass           = NSClassFromString(@"UISearchBarTextField");
 //     });
 //     return ([self isKindOfClass:UISearchBarTextFieldClass] || [self isKindOfClass:[UISearchBar class]]);
-    return NO;
+    return YES;
 }
 
 -(BOOL)isAlertViewTextField
